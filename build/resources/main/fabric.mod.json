@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "colorfulleaves",
+  "version": "1.0",
+  "name": "ColorfulLeaves",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/colorfulleaves/icon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.IzzyIs.colorfulleaves.client.ColorfulleavesDataGenerator"
+    ],
+    "client": [
+      "org.IzzyIs.colorfulleaves.client.ColorfulleavesClient"
+    ],
+    "main": [
+      "org.IzzyIs.colorfulleaves.Colorfulleaves"
+    ]
+  },
+  "mixins": [
+    "colorfulleaves.mixins.json",
+    {
+      "config": "colorfulleaves.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric": "*",
+    "minecraft": "1.21.8"
+  }
+}
