@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:red_dye",
+    "#minecraft:leaves"
+  ],
+  "result": {
+    "count": 1,
+    "id": "colorfulleaves:red_leaves"
+  }
+}
